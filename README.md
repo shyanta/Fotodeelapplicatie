@@ -1,3 +1,6 @@
 # Fotodeelapplicatie
 
-Deze applicatie werkt alleen door van te voren de npm install uit te voeren. Anders zal deze niet werken.
+
+Voor deze applicatie heb ik gebruik gemaakt van node.js, express en ejs.
+Om deze applicatie werkend op uw computer te krijgen, moet u van te voren npm install uitvoeren.
+Anders kunt u deze niet bekijken.

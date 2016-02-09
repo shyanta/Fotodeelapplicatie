@@ -1,0 +1,11 @@
+<%- include('./partials/head') %>
+<a href='/login'><button>Log in</button></a>
+<a href='/register'><button>Registreren</button></a>
+
+<ul>
+	<% for(var i=0; i < fotos.length; i++){ %>	
+		<li><a href='/content/<%= fotos[i].filename %>'><img src="uploads/<%= fotos[i].filename%>"></a></li>
+		<% }; %><br /><br />
+</ul>
+
+<%- include('./partials/footer') %>

@@ -1,0 +1,23 @@
+<%- include('./partials/head') %>
+
+<a href='/content'><button>Terug</button></a>
+<br />
+<img class="photo" src="../uploads/<%=photo%>">
+
+<div id='comments'>
+	<% for(var i=0; i < comment.length; i++){ %>	
+		<p class='comment'>
+			<%= comment[i].comment%>
+		</p>
+	<% }; %><br /><br />
+</div>
+
+<form class='comment' action="/content/<%=photo%>" method="post">
+  <label for="comment">Comment:</label><br />
+    <input type="text" name="comment" id="comment" /><br />
+  <label for="submit"></label><br />
+    <input type="submit" id="submit" value="Plaats Comment!" />
+</form>
+
+
+<%- include('./partials/footer') %>

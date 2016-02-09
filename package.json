@@ -1,0 +1,23 @@
+{
+  "name": "eindopdracht",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "express-myconnection": "^1.0.4",
+    "express-session": "^1.13.0",
+    "fs": "0.0.2",
+    "morgan": "^1.6.1",
+    "multer": "^1.1.0",
+    "mysql": "^2.10.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,15 @@
+<%- include('../partials/head') %>
+<h2>Welkom</h2>
+<h3>Log hier in</h3>
+
+<form action="<%= req.baseUrl + "" %>" method="post">
+  <label for="username">Gebruikersnaam:</label><br />
+    <input type="text" name="username" id="username" value="" /><br />
+  <label for="password">Wachtwoord:</label><br />
+    <input type="password" name="password" value="" />
+  <label for="submit"></label><br />
+    <input type="submit" id="submit" value="Login!" />
+</form>
+<a href='/register'><button>Registreren</button></a>
+
+<%- include('../partials/footer') %>

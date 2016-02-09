@@ -1,0 +1,16 @@
+<%- include('./partials/head') %>
+
+<p class='user'> Welkom <%= user%> </p>
+
+<a href='/upload'><button>Upload een bestand</button></a>
+        
+
+<p><a href='/logout'><button>Log Uit</button></a></p>
+
+<ul>
+	<% for(var i=0; i < fotos.length; i++){ %>	
+		<li><a href='/content/<%= fotos[i].filename %>'><img src="uploads/<%= fotos[i].filename%>"></a></li>
+		<% }; %><br /><br />
+</ul>
+
+<%- include('./partials/footer') %>

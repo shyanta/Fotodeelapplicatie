@@ -1,0 +1,15 @@
+<%- include('../partials/head.ejs') %>
+
+<h1>Registeren</h1>
+<form action="/register" method="post">
+  <label for="Username">Gebruikersnaam:</label><br />
+    <input type="text" name="username" id="username" value="" /><br />
+  <label for="email">Email:</label><br />
+    <input type="email" name="email" value="" /><br />
+   <label for="password">Wachtwoord:</label><br />
+    <input type="password" name="password" value="" />
+  <label for="submit"></label><br />
+    <input type="submit" id="submit" value="Registreer!" />
+</form>
+
+<%- include('../partials/footer.ejs') %>
